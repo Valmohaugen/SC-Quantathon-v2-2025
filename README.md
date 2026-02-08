@@ -1,4 +1,4 @@
-# SC-Quantathon-v2-2025: SRNL Challenge
+# SC Quantathon v2 2025: SRNL Challenge
 
 This repository is the home for the SC Quantathon v2 2025 SRNL challenge, QNN/QSVM tornado classification with noise & fidelity characterization on quantum backends.
 
