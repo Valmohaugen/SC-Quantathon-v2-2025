@@ -1,106 +1,47 @@
-# SC-Quantathon v2 (2025)
+# SC-Quantathon-v2-2025: SRNL Challenge
 
-Welcome to the SC-Quantathon v2 repository! This project is part of the 2025 SC Quantum Hackathon, focusing on applying quantum machine learning (QML) techniques to real-world scientific challenges. The repository contains code, data, and results for quantum and classical machine learning models, with a focus on tornado prediction using quantum-enhanced algorithms.
+Welcome to the SC-Quantathon-v2-2025 repository—a collaborative space for quantum machine learning and benchmarking. This project continues the Quantathon tradition, focusing on quantum ML, noise analysis, and practical applications for tornado prediction.
 
-## Project Overview
+## Features
 
-This repository explores the use of quantum machine learning for binary and multi-class classification tasks related to tornado prediction. The project leverages multiple quantum computing frameworks (PennyLane, Qiskit, Cirq) and compares quantum models to classical baselines.
+- **Quantum Machine Learning:** Train and evaluate quantum models (QNN, QSVM) for tornado prediction and classification. Compare quantum models to classical ML baselines.
+- **Noise & Fidelity Characterization:** Analyze hardware-induced noise, decoherence, and gate errors. Visualize their impact on model performance using confusion matrices and classification reports.
+- **Real-World Benchmarking:** Apply quantum ML output to practical benchmarks, demonstrating utility in scientific and meteorological scenarios.
+- **Data Generation & Analysis:** Generate, process, and analyze tornado datasets. Scripts and notebooks provided for reproducibility.
 
-## Directory Structure
+## How to Use This Repository
 
-```
-.
-├── README.md
-├── tornado_dataset.py
-├── tornadont.ipynb
-├── QNN/
-│   ├── QNN_binary.py
-│   └── PennyLane/
-│       ├── classification_report.txt
-│       ├── confusion_matrix.csv
-│       └── qnn_model.pth
-├── QSVM/
-│   ├── plot_qsvm_comparison.py
-│   ├── QSVM_binary.py
-│   ├── QSVM_multi.py
-│   ├── quantum_features_ml.py
-│   ├── Cirq/
-│   │   ├── best_params.txt
-│   │   ├── QSVM_binary_classification_report.txt
-│   │   ├── QSVM_binary_confusion_matrix.csv
-│   │   ├── QSVM_binary_X_train.npy
-│   │   ├── QSVM_multi_best_params.txt
-│   │   ├── QSVM_multi_classification_report.txt
-│   │   └── QSVM_multi_confusion_matrix.csv
-│   ├── PennyLane/
-│   │   └── ... (same as above)
-│   └── Qiskit/
-│       └── ... (same as above)
-```
+1. **Clone the repository:**
+   ```bash
+   git clone <repo-url>
+   ```
 
-- **QNN/**: Quantum Neural Network models and results.
-- **QSVM/**: Quantum Support Vector Machine models, scripts, and results.
-- **tornado_dataset.py**: Script for loading and preprocessing the tornado dataset.
-- **tornadont.ipynb**: Main notebook for data exploration, model training, and evaluation.
+2. **Explore the project structure:**
+   - `QNN/`: Quantum Neural Network models and results
+   - `QSVM/`: Quantum Support Vector Machine models and results
+   - `tornado_dataset.py`: Data generation and processing scripts
+   - `tornadont.ipynb`: Main notebook for experiments and analysis
 
-## Dataset
+3. **Run notebooks and scripts:**
+   - Use Jupyter Notebook or VS Code to run `.ipynb` files and Python scripts.
+   - Each stage is documented for reproducibility.
 
-The dataset is related to tornado prediction, likely containing meteorological features and tornado occurrence labels. Data loading and preprocessing are handled in `tornado_dataset.py` and explored in `tornadont.ipynb`.
+4. **Install dependencies:**
+   - Ensure you have Python, Jupyter, and required packages (e.g., numpy, scikit-learn, matplotlib, PennyLane, Qiskit, Cirq).
+   - Add extra packages as needed for quantum ML and data analysis.
 
-## Quantum Models
+## Results
 
-### Quantum Neural Network (QNN)
+By following the stages, you will:
 
-- **QNN_binary.py**: Implements a binary classification QNN using PennyLane.
-- **QNN/PennyLane/**: Stores trained model weights (`qnn_model.pth`), classification reports, and confusion matrices.
+- Train quantum and classical classifiers for tornado prediction.
+- Characterize and mitigate noise, improving model quality.
+- Compare quantum and classical ML performance on meteorological data.
+- Reproduce and extend quantum ML experiments with provided datasets and scripts.
 
-### Quantum Support Vector Machine (QSVM)
+## Project Stages
 
-- **QSVM_binary.py**: Binary classification using QSVM.
-- **QSVM_multi.py**: Multi-class classification using QSVM.
-- **quantum_features_ml.py**: Feature engineering and classical ML baselines for comparison.
-- **QSVM/[Cirq|PennyLane|Qiskit]/**: Results and best parameters for each quantum framework.
-
-#### Frameworks
-
-- **PennyLane**: Hybrid quantum-classical ML with differentiable programming.
-- **Qiskit**: IBM's quantum SDK for circuit-based QSVMs.
-- **Cirq**: Google's quantum SDK for circuit-based QSVMs.
-
-## Classical Baselines
-
-Classical machine learning models are implemented in `quantum_features_ml.py` for benchmarking quantum models.
-
-## Results & Reports
-
-Each quantum framework directory contains:
-- `best_params.txt`: Best hyperparameters found.
-- `classification_report.txt`: Precision, recall, F1-score, and support.
-- `confusion_matrix.csv`: Confusion matrix for model predictions.
-- `X_train.npy`: Training data used for the quantum models.
-
-## How to Run
-
-1. **Install dependencies** (see below).
-2. **Prepare the dataset** using `tornado_dataset.py`.
-3. **Train and evaluate models**:
-	 - Run `QNN/QNN_binary.py` for QNN experiments.
-	 - Run `QSVM/QSVM_binary.py` or `QSVM/QSVM_multi.py` for QSVM experiments.
-	 - Use `tornadont.ipynb` for interactive exploration and visualization.
-4. **Compare results** using the reports and plots in each framework directory.
-
-## Dependencies
-
-- Python 3.8+
-- PennyLane
-- Qiskit
-- Cirq
-- NumPy, pandas, scikit-learn, matplotlib
-
-Install dependencies with:
-
-```bash
-pip install pennylane qiskit cirq numpy pandas scikit-learn matplotlib
-```
-
-[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/TariniHardikar/SCQuantum-SRNL-Challenge-2025.git)
+1. **Data Generation:** Generate tornado datasets using quantum and classical methods.
+2. **Quantum ML Training:** Train QNN and QSVM models for classification and verification.
+3. **Noise Analysis:** Analyze noise, fidelity, and quantum hardware effects using confusion matrices and reports.
+4. **Benchmarking & Applications:** Apply results to real-world benchmarks and verify performance.
