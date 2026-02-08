@@ -1,6 +1,6 @@
 # SC-Quantathon-v2-2025: SRNL Challenge
 
-Welcome to the SC-Quantathon-v2-2025 repository—a collaborative space for quantum machine learning and benchmarking. This project continues the Quantathon tradition, focusing on quantum ML, noise analysis, and practical applications for tornado prediction.
+This repository is the home for the SC Quantathon v2 2025 SRNL challenge, QNN/QSVM tornado classification with noise & fidelity characterization on quantum backends.
 
 ## Features
 
@@ -13,7 +13,8 @@ Welcome to the SC-Quantathon-v2-2025 repository—a collaborative space for quan
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/Valmohaugen/SC-Quantathon-v2-2025.git
+   cd SC-Quantathon-v2-2025
    ```
 
 2. **Explore the project structure:**
